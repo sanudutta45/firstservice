@@ -1,0 +1,47 @@
+.navbar {
+  padding: 10px 50px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar .nav {
+  li {
+    padding: 0 15px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  li a {
+    color: #323232;
+    font-size: 16px;
+    transition-duration: 0.15s;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #42b7e2;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 758px) {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+    li {
+      display: block;
+      text-align: left;
+      padding: 6px 0;
+    }
+  }
+}
+
+.activeLink {
+  color: #42b7e2 !important;
+}
