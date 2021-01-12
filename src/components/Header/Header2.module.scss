@@ -1,6 +1,6 @@
 .navbar {
   padding: 10px 50px;
-
+  background-color: #fff;
   a {
     text-decoration: none;
   }
@@ -34,6 +34,8 @@
     padding-bottom: 15px;
     width: 75%;
     height: 100%;
+    background-color: #fff;
+    height: 100vh;
     li {
       display: block;
       text-align: left;

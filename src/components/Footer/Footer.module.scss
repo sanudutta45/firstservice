@@ -1,0 +1,54 @@
+.top_wrapper{
+    background-color: #1d2225;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+
+.contentWrapper{
+    li{
+        text-transform: capitalize;
+        white-space: nowrap;
+        color: #fff;
+        display: inline-block;
+        padding: 0 30px;
+        font-size: 18px;
+    }
+
+    li:hover{
+        color: #42b7e2;
+        cursor: pointer;
+    }
+}
+
+.bottom_wrapper{
+    background-color: #1d2225;
+    overflow: hidden;
+
+    h4{
+        color:#fff;
+        text-transform: capitalize;
+        font-size: 28px;
+        letter-spacing: 1.4px;
+    }
+    p{
+        color: #9da5a9;
+        line-height: 30px;
+    }
+    span{
+        color: #9da5a9;
+        line-height: 30px;
+    }
+    span:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.copyRight{
+    background-color: #191d20;
+    p{
+        color: #9da5a9;
+        display: block;
+        padding: 9px 0;
+    }
+}

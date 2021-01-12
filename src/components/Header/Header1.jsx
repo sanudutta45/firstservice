@@ -7,7 +7,7 @@ import {
   faMobile,
 } from "@fortawesome/free-solid-svg-icons"
 
-import cx from "classnames"
+// import cx from "classnames"
 
 //components
 import CustomIcon from "../CustomIcon/CustomIcon"

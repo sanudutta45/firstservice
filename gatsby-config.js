@@ -15,6 +15,8 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-fontawesome-css",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -27,9 +29,17 @@ module.exports = {
         fonts: [
           {
             family: "Nunito",
-            variants: ["400"],
+            variants: ["100","300","400","600"],
           },
         ],
+        display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/assets/images`,
       },
     },
   ],

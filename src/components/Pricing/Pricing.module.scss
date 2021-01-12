@@ -1,0 +1,25 @@
+@import "../../styles/mixins.scss";
+
+.wrapper{
+    background-color: #f7f6fb;
+    
+}
+
+.header{
+    margin: 40px 0;
+    h5{
+        text-transform: uppercase;
+        white-space: nowrap;
+        @include fluid_typography(13, 18, 372, 1500);
+    }
+    h2{
+        text-transform: capitalize;
+        white-space: nowrap;
+        @include fluid_typography(25, 50, 372, 1500);
+
+    }
+}
+
+.row > div{
+    padding: 0;
+}

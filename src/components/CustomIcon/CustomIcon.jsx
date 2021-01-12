@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle } from "@fortawesome/free-solid-svg-icons"
 
 //scss
-import CustomIconStyle from "./CustomIcon.module.scss"
+// import CustomIconStyle from "./CustomIcon.module.scss"
 
 const CustomIcon = ({ icon }) => {
   return (

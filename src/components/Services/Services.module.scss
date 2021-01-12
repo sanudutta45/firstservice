@@ -1,0 +1,26 @@
+@import "../../styles/mixins.scss";
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex div{
+  padding: 0px;
+}
+
+
+.heading1 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  @include fluid_typography(12, 24, 372, 1500);
+}
+
+.heading2 {
+  text-transform: capitalize;
+  white-space: nowrap;
+  @include fluid_typography(20, 55, 372, 1500);
+  margin: 8px 0 50px 0;
+}

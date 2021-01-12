@@ -3,9 +3,13 @@ import { Container } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 
-//components
-import Header1 from "../components/Header/Header1";
-import Header2 from "../components/Header/Header2";
+//containers
+import Header1 from "../components/Header/Header1"
+import Header2 from "../components/Header/Header2"
+import Carousel from "../components/Carousel/CarouselBanner"
+import Service from "../components/Services/Services"
+import Pricing from "../components/Pricing/Pricing"
+import Footer from "../components/Footer/Footer"
 
 //scss
 import "../styles/_global.scss"
@@ -28,8 +32,12 @@ const Home = () => {
         <title>Home | {data.site.siteMetadata.title}</title>
       </Helmet>
       <Container fluid className="p-0">
-          <Header1/>
-          <Header2/>
+        <Header1 />
+        <Header2 />
+        <Carousel />
+        <Service />
+        <Pricing/>
+        <Footer/>
       </Container>
     </Fragment>
   )
