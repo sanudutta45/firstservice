@@ -1,0 +1,88 @@
+.wrapper {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 2px;
+  display: block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.top {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #7238a0 !important;
+  background-image: linear-gradient(to right, #303a81 0%, #7238a0 100%);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.5px;
+  border-radius: 5px 5px 0 0;
+  font-size: 22px;
+}
+
+.mid {
+  background-color: #f7f6fb;
+
+  label {
+    text-transform: uppercase;
+    display: block;
+    color: #42b7e2;
+    margin: 0;
+    margin-top: 20px;
+  }
+  h5 {
+    font-size: 28px;
+    white-space: nowrap;
+    font-weight: 600;
+    margin: 0;
+  }
+  span {
+    white-space: nowrap;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 17px;
+  }
+}
+
+.bottom {
+  li{
+    margin-bottom: 8px;
+  }
+  li::before {
+    content: "\2022";
+    color: #42b7e2;
+    font-weight: 600;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  div{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: -18px;
+    color: #323232;
+  }
+
+  div span:nth-child(odd){
+    text-transform: capitalize;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  div span:nth-child(even){
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    line-height: 34px;
+
+  }
+  
+
+}
