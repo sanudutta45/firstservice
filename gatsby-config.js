@@ -23,13 +23,25 @@ module.exports = {
         icon: "src/assets/images/firstService.png",
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Nunito`,
+    //         variants: [`100`, `300`, `400`],
+    //       },
+    //     ],
+    //     display: "swap",
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-prefetch-google-fonts",
       options: {
         fonts: [
           {
             family: "Nunito",
-            variants: ["100","300","400","600"],
+            variants: ["100", "300", "400"],
           },
         ],
         display: "swap",
