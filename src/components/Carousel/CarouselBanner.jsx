@@ -10,7 +10,7 @@ import { Fragment } from "react"
 function CarouselBanner() {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "slide01.jpg" }) {
+      file(relativePath: { eq: "slide01.png" }) {
         childImageSharp {
           fluid(maxWidth: 2480, maxHeight: 1020, quality: 100) {
             ...GatsbyImageSharpFluid

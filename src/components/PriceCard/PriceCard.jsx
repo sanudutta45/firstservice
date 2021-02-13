@@ -1,10 +1,10 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 //scss
 import cardStyle from "./PriceCard.module.scss"
 
-function PriceCard({ type, speed, channels, desc, iconImg, price }) {
+function PriceCard({ type, speed, price }) {
   return (
     <div className={cardStyle.wrapper}>
       <div className={cardStyle.top}>{type}</div>
@@ -14,24 +14,25 @@ function PriceCard({ type, speed, channels, desc, iconImg, price }) {
         <div>
           <label htmlFor="speed">internet</label>
           <h5>{speed} Mbps</h5>
-          <span>download speeds</span>
+          <span>download speed</span>
 
-          <label htmlFor="speed">tv</label>
+          {/* <label htmlFor="speed">tv</label>
           <h5>{channels}+</h5>
-          <span>Channels</span>
+          <span>Channels</span> */}
         </div>
-        <Img fixed={iconImg} imgStyle={{ objectFit: "cover" }} />
+        {/* <Img fixed={iconImg} imgStyle={{ objectFit: "cover" }} /> */}
       </div>
       <div className={`${cardStyle.bottom} pl-5 pt-5 pb-5`}>
         <ul>
           <li>Multi-device streaming</li>
           <li>Download shows quickly</li>
           <li>Download large files</li>
+          <li>Unlimited downloading &amp; uploading</li>
         </ul>
-        <div className="mt-3">
+        <div className={`${cardStyle.price} mt-3`}>
           <span>&#8377;</span>
           <span>{price}</span>
-          <span>.99/Mo</span>
+          <span>/Mo</span>
         </div>
       </div>
     </div>
