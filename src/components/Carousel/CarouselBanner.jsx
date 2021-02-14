@@ -10,7 +10,7 @@ import { Fragment } from "react"
 function CarouselBanner() {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "slide01.jpg" }) {
+      file(relativePath: { eq: "slide01.png" }) {
         childImageSharp {
           fluid(maxWidth: 2480, maxHeight: 1020, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -37,7 +37,6 @@ function CarouselBanner() {
             <h1>our plans give you more than ever</h1>
             <p className={CarouselStyle.extra_info}>
               Surf, stream, chat and game with fast speeds.
-              <br />
               Equipment included and no extra monthly fees.
             </p>
           </Carousel.Caption>

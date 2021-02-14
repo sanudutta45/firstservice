@@ -32,8 +32,8 @@ const Header2 = () => {
             <Img fixed={data.file.childImageSharp.fixed} alt="" />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className={HeaderStyle.nav}>
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+        {/* <Navbar.Collapse id="basic-navbar-nav" className={HeaderStyle.nav}>
           <Nav className="ml-auto">
             <ul>
               <li>
@@ -55,7 +55,7 @@ const Header2 = () => {
               </li>
             </ul>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Navbar>
     </Fragment>
   )

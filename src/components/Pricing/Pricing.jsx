@@ -1,41 +1,44 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { graphql, useStaticQuery } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 
 //components
 import PriceCard from "../PriceCard/PriceCard"
 
+//constants
+import { residentialPlans, commercialPlans } from "../../constants/constants"
+
 //scss
-import PricingStyle from "./Pricing.module.scss";
+import PricingStyle from "./Pricing.module.scss"
 
 function Pricing() {
-  const data = useStaticQuery(graphql`
-    query {
-      img1: file(relativePath: { eq: "price-img1-1.png" }) {
-        childImageSharp {
-          fixed(width: 110) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     img1: file(relativePath: { eq: "price-img1-1.png" }) {
+  //       childImageSharp {
+  //         fixed(width: 110) {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
 
-      img2: file(relativePath: { eq: "price-img2-1.png" }) {
-        childImageSharp {
-          fixed(width: 110) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
+  //     img2: file(relativePath: { eq: "price-img2-1.png" }) {
+  //       childImageSharp {
+  //         fixed(width: 110) {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
 
-      img3: file(relativePath: { eq: "price-img3-1.png" }) {
-        childImageSharp {
-          fixed(width: 110) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
+  //     img3: file(relativePath: { eq: "price-img3-1.png" }) {
+  //       childImageSharp {
+  //         fixed(width: 110) {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <Container fluid className={`mt-5 p-5 ${PricingStyle.wrapper}`}>
@@ -44,35 +47,34 @@ function Pricing() {
         <h2>Better-Than-Ever Offers</h2>
       </div>
       <Container fluid="xl">
-      <Row className={PricingStyle.row}>
-        <Col lg={4} className="mb-3">
-          <PriceCard
-            type="basic"
-            speed="80"
-            channels="125"
-            price="39"
-            iconImg={data.img1.childImageSharp.fixed}
-          />
-        </Col>
-        <Col lg={4} className="mb-3">
-          <PriceCard
-            type="premium"
-            speed="160"
-            channels="200"
-            price="89"
-            iconImg={data.img2.childImageSharp.fixed}
-          />
-        </Col>
-        <Col lg={4} className="mb-3">
-          <PriceCard
-            type="ultra"
-            speed="300"
-            channels="280"
-            price="139"
-            iconImg={data.img3.childImageSharp.fixed}
-          />
-        </Col>
-      </Row>
+        <h5 className={PricingStyle.planHeader}>Residential Plans</h5>
+        <Row className={PricingStyle.row}>
+          {residentialPlans.map(plans => (
+            <Col lg={3} sm={6} className="mb-3">
+              <PriceCard
+                type={plans.type}
+                speed={plans.speed}
+                price={plans.price}
+                // iconImg={data.img1.childImageSharp.fixed}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
+      <Container fluid="xl" className="mt-5">
+        <h5 className={PricingStyle.planHeader}>Commercial Plans</h5>
+        <Row className={PricingStyle.row}>
+          {commercialPlans.map(plans => (
+            <Col lg={3} sm={6} className="mb-3">
+              <PriceCard
+                type={plans.type}
+                speed={plans.speed}
+                price={plans.price}
+                // iconImg={data.img1.childImageSharp.fixed}
+              />
+            </Col>
+          ))}
+        </Row>
       </Container>
     </Container>
   )

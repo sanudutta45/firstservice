@@ -33,7 +33,6 @@
     display: block;
     color: #42b7e2;
     margin: 0;
-    margin-top: 20px;
   }
   h5 {
     font-size: 28px;
@@ -51,7 +50,7 @@
 }
 
 .bottom {
-  li{
+  li {
     margin-bottom: 8px;
   }
   li::before {
@@ -63,26 +62,23 @@
     margin-left: -1em;
   }
 
-  div{
+  .price {
     font-size: 20px;
     font-weight: 400;
     margin-left: -18px;
     color: #323232;
   }
 
-  div span:nth-child(odd){
+  .price span:nth-child(odd) {
     text-transform: capitalize;
     vertical-align: top;
     display: inline-block;
   }
 
-  div span:nth-child(even){
-    font-size: 36px;
+  .price span:nth-child(even) {
+    font-size: 30px;
     position: relative;
     display: inline-block;
     line-height: 34px;
-
   }
-  
-
 }

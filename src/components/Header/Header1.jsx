@@ -29,15 +29,15 @@ const Header1 = () => {
             <ul className={Header.responsiveUl}>
               <li>
                 <CustomIcon icon={faMapMarker} />
-                <span> 2231 Johnstown Road Bensenville, IL 60106</span>
+                <span>A&amp;S Complex Dorando, Ranchi, Jhankhand 834002</span>
               </li>
               <li>
                 <CustomIcon icon={faEnvelope} />
-                <span>example@jelyco.com</span>
+                <span>support@firstservice.com</span>
               </li>
               <li>
                 <CustomIcon icon={faMobile} />
-                <span>800.567.1234</span>
+                <span>+91-9576662085</span>
               </li>
             </ul>
           </Col>
