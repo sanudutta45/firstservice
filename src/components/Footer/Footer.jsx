@@ -57,20 +57,20 @@ const Footer = () => {
       <Container fluid className={FooterStyle.bottom_wrapper}>
         <Container fluid="xl">
           <Row className="p-4 mt-2 mb-5">
-            <Col lg={3} className="pt-3">
+            <Col lg={4} className="pt-3">
               <h4>address</h4>
               <p>
-                1705 South Capital
+                2, A&amp;S Complex New Parastoli
                 <br />
-                of Texas Hwy
+                Near Hinoo Bridge, Dorando
                 <br />
-                #320 Austin, TX 78746
+                Ranchi, Jhankhand 834002
               </p>
             </Col>
-            <Col lg={4} className="pt-3">
+            <Col lg={8} className="pt-3">
               <h4>contact</h4>
-              <span className="d-block">info@swrmlabs.io</span>
-              <span className="d-bloxck">+1 (512) 527-3034</span>
+              <span className="d-block">info@firstservice.in</span>
+              <span className="d-bloxck">+91-8102741758</span>
             </Col>
           </Row>
         </Container>
@@ -80,7 +80,7 @@ const Footer = () => {
         <Container fluid="xl">
           <Row className="p-4 text-center text-lg-left">
             <Col sm={12}>
-              <p>&copy; Copyright Jelyco 2019 All Rights Reserved</p>
+              <p>&copy; Copyright Sanu Dutta 2019 All Rights Reserved</p>
             </Col>
           </Row>
         </Container>

@@ -17,8 +17,8 @@ import { Container, Row, Col } from "react-bootstrap"
 const Services = () => {
   return (
     <Container className="text-center mt-5 pt-5 pb-5" fluid="xl">
-      <h5 className={serviceStyle.heading1}>jelly broadband internet</h5>
-      <h1 className={serviceStyle.heading2}>Network Solutions from jellynet</h1>
+      <h5 className={serviceStyle.heading1}>firstservice broadband internet</h5>
+      <h1 className={serviceStyle.heading2}>Network Solutions from firstservice</h1>
       <Row className={serviceStyle.flex}>
         <Col xl={3} lg={6} sm={12}  className="mb-3">
           <Card

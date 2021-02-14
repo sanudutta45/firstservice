@@ -37,7 +37,6 @@ function CarouselBanner() {
             <h1>our plans give you more than ever</h1>
             <p className={CarouselStyle.extra_info}>
               Surf, stream, chat and game with fast speeds.
-              <br />
               Equipment included and no extra monthly fees.
             </p>
           </Carousel.Caption>
