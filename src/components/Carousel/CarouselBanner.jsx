@@ -33,7 +33,7 @@ function CarouselBanner() {
             imgStyle={{ objectFit: "cover" }}
           />
           <Carousel.Caption bsPrefix={CarouselStyle.caption}>
-            <p className={CarouselStyle.title}>jellynet broadband internet</p>
+            <p className={CarouselStyle.title}>firstwave broadband internet</p>
             <h1>our plans give you more than ever</h1>
             <p className={CarouselStyle.extra_info}>
               Surf, stream, chat and game with fast speeds.

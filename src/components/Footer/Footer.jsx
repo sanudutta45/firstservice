@@ -69,8 +69,17 @@ const Footer = () => {
             </Col>
             <Col lg={8} className="pt-3">
               <h4>contact</h4>
-              <span className="d-block">info@firstservice.in</span>
-              <span className="d-bloxck">+91-8102741758</span>
+              <span className="d-block">
+                <a
+                  href="mailto:info@firstwave.co.in"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "inherit" }}
+                >
+                  info@firstwave.co.in
+                </a>
+              </span>
+              <span className="d-block">+91-8102741758</span>
             </Col>
           </Row>
         </Container>

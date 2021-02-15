@@ -33,7 +33,7 @@ const Header1 = () => {
               </li>
               <li>
                 <CustomIcon icon={faEnvelope} />
-                <span>support@firstservice.com</span>
+                <a href="mailto:info@firstwave.co.in" target="_blank" rel="noreferrer">info@firstwave.co.in</a>
               </li>
               <li>
                 <CustomIcon icon={faMobile} />

@@ -1,6 +1,6 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
 import React, { Fragment } from "react"
-import { Navbar, Nav } from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
 import HeaderStyle from "./Header2.module.scss"
 import Img from "gatsby-image"
 import "./Header2_bootstrap_override.scss"
