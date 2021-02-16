@@ -8,7 +8,7 @@ import "./Header2_bootstrap_override.scss"
 const Header2 = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo_dark.png" }) {
+      file(relativePath: { eq: "logo_white_bg.png" }) {
         childImageSharp {
           fixed(height: 54) {
             ...GatsbyImageSharpFixed
