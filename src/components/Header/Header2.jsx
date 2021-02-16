@@ -10,7 +10,7 @@ const Header2 = () => {
     query {
       file(relativePath: { eq: "logo_dark.png" }) {
         childImageSharp {
-          fixed(width: 200) {
+          fixed(height: 54) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -27,10 +27,8 @@ const Header2 = () => {
         className={HeaderStyle.navbar}
         id="bootstrap_override"
       >
-        <Navbar.Brand>
-          <Link to="/">
+        <Navbar.Brand as={Link} to="/">
             <Img fixed={data.file.childImageSharp.fixed} alt="" />
-          </Link>
         </Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         {/* <Navbar.Collapse id="basic-navbar-nav" className={HeaderStyle.nav}>

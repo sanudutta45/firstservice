@@ -11,9 +11,9 @@ import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo-2-180x46.png" }) {
+      file(relativePath: { eq: "logo_white.png" }) {
         childImageSharp {
-          fixed(width: 180) {
+          fixed(height: 60) {
             ...GatsbyImageSharpFixed
           }
         }
