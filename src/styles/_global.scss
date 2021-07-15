@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-@import "./fonts";
 $grid-gutter-width: 0;
 
 //variables
@@ -8,36 +7,39 @@ $fontWeight: 400;
 $lineHeight: 24px;
 $backgroundColor: #fff;
 $listStyleType: none !default;
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Nunito', sans-serif;
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    line-height: 24px;
-    overflow: visible;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-font-smoothing: antialiased;
+html {
+  font-size: $fontSize;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: $listStyleType;
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
-li{
-    padding: 0;
-    margin: 0 ;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: $listStyleType;
 }
 
-a{
-    text-decoration: none;
+li {
+  padding: 0;
+  margin: 0;
 }
 
-p{
-    margin: 0;
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
 }

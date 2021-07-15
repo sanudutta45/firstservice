@@ -1,6 +1,6 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-// import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 //components
 import PriceCard from "../PriceCard/PriceCard"
@@ -12,33 +12,33 @@ import { residentialPlans, commercialPlans } from "../../constants/constants"
 import PricingStyle from "./Pricing.module.scss"
 
 function Pricing() {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     img1: file(relativePath: { eq: "price-img1-1.png" }) {
-  //       childImageSharp {
-  //         fixed(width: 110) {
-  //           ...GatsbyImageSharpFixed
-  //         }
-  //       }
-  //     }
+  const data = useStaticQuery(graphql`
+    query {
+      img1: file(relativePath: { eq: "price-img1-1.png" }) {
+        childImageSharp {
+          fixed(width: 110) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
 
-  //     img2: file(relativePath: { eq: "price-img2-1.png" }) {
-  //       childImageSharp {
-  //         fixed(width: 110) {
-  //           ...GatsbyImageSharpFixed
-  //         }
-  //       }
-  //     }
+      img2: file(relativePath: { eq: "price-img2-1.png" }) {
+        childImageSharp {
+          fixed(width: 110) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
 
-  //     img3: file(relativePath: { eq: "price-img3-1.png" }) {
-  //       childImageSharp {
-  //         fixed(width: 110) {
-  //           ...GatsbyImageSharpFixed
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+      img3: file(relativePath: { eq: "price-img3-1.png" }) {
+        childImageSharp {
+          fixed(width: 110) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Container fluid className={`mt-5 p-5 ${PricingStyle.wrapper}`}>
@@ -55,7 +55,7 @@ function Pricing() {
                 type={plans.type}
                 speed={plans.speed}
                 price={plans.price}
-                // iconImg={data.img1.childImageSharp.fixed}
+                iconImg={data.img1.childImageSharp.fixed}
               />
             </Col>
           ))}

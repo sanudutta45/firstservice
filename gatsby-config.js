@@ -24,15 +24,16 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
+      resolve: "gatsby-plugin-webfonts",
       options: {
-        fonts: [
-          {
-            family: "Nunito",
-            variants: ["100", "300", "400"],
-          },
-        ],
-        display: "swap",
+        fonts: {
+          google: [
+            {
+              family: "Nunito",
+              variants: ["100", "300", "400"],
+            },
+          ],
+        },
       },
     },
     {
