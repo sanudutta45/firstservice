@@ -20,7 +20,7 @@ jobs:
           submodules: true
       - uses: actions/setup-python@v2
         with:
-          python-version: '2.0' 
+          python-version: '2.7.18' 
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
